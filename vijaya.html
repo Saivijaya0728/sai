@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For My Valentine ❤️</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff4e8d, #ff9a9e);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', sans-serif;
+            color: white;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 25px;
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.7;
+        }
+
+        .heart {
+            font-size: 4em;
+            animation: beat 1s infinite;
+            margin-bottom: 20px;
+        }
+
+        @keyframes beat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.3); }
+            100% { transform: scale(1); }
+        }
+
+        button {
+            background: white;
+            color: #ff4e8d;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1.1em;
+            border-radius: 30px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #ffe1ea;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="heart">❤️</div>
+        <h1>Happy Valentine’s Day nanna </h1>
+        <p>
+            next Valentine days edharam kalisi chesukundham ra nanna,<br><br>
+            I love you ,<br>
+            plase nanu vadhili vellaku ra plzyeeee — miss you nanna.  
+            
+        </p>
+
+        <button onclick="showLove()">Click for a surprise 💌</button>
+
+        <p id="surprise" class="hidden">
+            <br>
+            You are my love,<br>
+            my heart beats for you only you,<br>
+            and if you're not there,it will stop that.<br><br>
+            <strong>I love you endlessly ❤️</strong><br><br>
+            — Sai Krishna (ni mogudu)
+        </p>
+        
+    </div>
+
+    <script>
+        function showLove() {
+            document.getElementById("surprise").classList.remove("hidden");
+        }
+    </script>
+
+</body>
+</html>
